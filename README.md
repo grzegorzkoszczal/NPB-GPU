@@ -132,5 +132,5 @@ This error shows, that GPU code was not compiled correctly. In order to fix it, 
 COMPUTE_CAPABILITY = -gencode arch=compute_61,code=sm_61
 ```
 
-One can check the compute capability of their GPU, by checking the table on Wikipedia:
+One can check the compute capability of their GPU, by checking the table on Wikipedia:\
 https://en.wikipedia.org/wiki/CUDA 
