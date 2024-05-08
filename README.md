@@ -121,3 +121,15 @@ GPU_DEVICE = <interger-value>
 ```
 
 ## Troubleshooting
+
+# "Verification" as "UNSUCCESSFUL" and terminating immediately error.
+
+At first, the compilation flags were set to GPU with CUDA compute capability version of 6.1 (GPU used by the original authors of this repository for the research purposes was GeForce GTX 1080 Ti)
+
+This error shows, that GPU code was not compiled correctly. In order to fix it, change directory to /CUDA/config and edit the "make.def" file. Then, edit this line, by replacing number 61 with corresponding CUDA compute capability:
+
+```
+COMPUTE_CAPABILITY = -gencode arch=compute_61,code=sm_61
+```
+
+One can check the compute capability of their GPU, by checking the table on Wikipedia: https://en.wikipedia.org/wiki/CUDA 
