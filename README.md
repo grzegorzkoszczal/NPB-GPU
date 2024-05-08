@@ -119,3 +119,5 @@ The NPB-GPU also allows changing the GPU device by providing the following synta
 ```
 GPU_DEVICE = <interger-value>
 ```
+
+## Troubleshooting
